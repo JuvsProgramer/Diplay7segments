@@ -21,7 +21,12 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  uno();
+ counter();
+}
+void counter(){
+  cero();
+  delay(delaytime);
+    uno();
   delay(delaytime);
   dos();
   delay(delaytime);
@@ -39,9 +44,18 @@ void loop() {
   delay(delaytime); 
   nueve(); 
   delay(delaytime);
-  cero();
+  a();
   delay(delaytime);
-}
+  b();
+  delay(delaytime);
+  c();
+  delay(delaytime);
+  d();
+  delay(delaytime);
+  e();
+  delay(delaytime);
+  f();
+  delay(delaytime);}
 void uno(){
   digitalWrite(F, LOW);
   digitalWrite(E, LOW);
@@ -62,11 +76,11 @@ void dos(){
  }
  void tres(){
   digitalWrite(A, LOW);
-  digitalWrite(F, LOW);
+  digitalWrite(B, LOW);
   digitalWrite(G, LOW);
-  digitalWrite(E, LOW);
+  digitalWrite(C, LOW);
   digitalWrite(D, LOW);
-  digitalWrite(B, HIGH);}
+  digitalWrite(E, HIGH);}
 void cuatro(){
 digitalWrite(F, LOW);
 digitalWrite(G, LOW);
@@ -110,10 +124,10 @@ digitalWrite(G, LOW);}
 void nueve(){
 digitalWrite(A, LOW);
 digitalWrite(B, LOW);
-digitalWrite(F, LOW);
+digitalWrite(C, LOW);
 digitalWrite(G, LOW);
-digitalWrite(E, LOW);
-digitalWrite(C, HIGH);
+digitalWrite(F, LOW);
+digitalWrite(E, HIGH);
 digitalWrite(D, HIGH);}
 void cero(){
 digitalWrite(A, LOW);
@@ -122,4 +136,52 @@ digitalWrite(C, LOW);
 digitalWrite(D, LOW);
 digitalWrite(E, LOW);
 digitalWrite(F, LOW);
-digitalWrite(G, HIGH);}                                             
+digitalWrite(G, HIGH);}
+void a(){
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  digitalWrite(D, HIGH);}
+void b(){
+   digitalWrite(A, HIGH);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  digitalWrite(D, LOW);}
+void c(){
+   digitalWrite(A, LOW);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, HIGH);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, HIGH);
+  digitalWrite(D, LOW);}
+void d(){
+   digitalWrite(A, HIGH);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, LOW);
+  digitalWrite(D, LOW);}
+void e(){
+   digitalWrite(A, LOW);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, HIGH);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  digitalWrite(D, LOW);}
+void f(){
+   digitalWrite(A, LOW);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, HIGH);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  digitalWrite(D, HIGH);}                                             
